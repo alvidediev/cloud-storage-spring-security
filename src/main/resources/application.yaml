@@ -1,0 +1,19 @@
+server:
+  port: 8181
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/proselyte
+    username: proselyte
+    password: proselyte
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+app:
+  secret-key: "645267556B58703272357538782F413F4428472B4B6250655368566D59713374"
